@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>                
+        <meta charset="UTF-8">
+		<link rel='stylesheet' href='css/style.css' />
+		<script src='js/jquery-1.8.1.js'></script>       	
+		<script src='js/players.js'></script>	
+		<script src='js/cages.js'></script>	
+		<script src='js/scripts.js'></script>		
+	</head>
+	<body>
+		<nav id='navbar'>
+			<ul type="none">
+				<li><a> <img src='img/fence-icon.png'> FenceFight</a></li> 
+                                <li id="newGame"> Novo jogo</li> 
+                                <li id="custom"> Customizar </li>
+			</ul>
+		</nav>	
+            <section class="selectBar">
+            </section>
+		<section id='farm'>
+		</section>
+            <section class="playerContainer" id="p1">
+                <section class="avatar">
+                    <img id="p1avatar" src="img/no.png" /> 
+                </section>
+                <article class="playerName first"></article>
+                <article class="playMark" id="mark1">PLAY</article>
+                <section class="playerPoints" id="p1points">
+                    <article class="pointBox" id="p1pt">0</article>                    
+                    <article class="psOne psTwo">Jogador 1</article>
+                </section>
+            </section>
+            <section class="playerContainer" id="p2">
+                <section class="avatar">
+                    <img id="p2avatar" src='img/hippo-icon.png' /> 
+                </section>                
+                <article class="playerName second"></article>
+                <article class="playMark" id="mark2">PLAY</article>
+                <section class="playerPoints" id="p2points">                    
+                    <article class="pointBox" id="p2pt">0</article>
+                    <article class="psOne psThree">Jogador 2</article>
+                </section>
+            </section>
+            <section class="newGameContainer">
+                <section class="page1">
+                    Jogadores: <span class="disabledPlayer">1</span><span class="number twoPlayer">2</span>
+                </section>    
+            </section>
+            <section class="newGameContainer2">
+                <span id="order"></span>
+                <section class="page2">                    
+                    <figure class="chooseAvatar available" id="kurt" ><img src='img/cat-icon.png' /><figcaption>Kurt</figcaption></figure> 
+                    <figure class="chooseAvatar available" id="john" ><img src='img/hippo-icon.png' /><figcaption>John</figcaption></figure>  
+                    <figure class="chooseAvatar available" id="dave" ><img src='img/monkey-icon.png' /><figcaption>Dave</figcaption></figure>  
+                    <figure class="chooseAvatar available" id="fred" ><img src='img/panda-icon.png' /><figcaption>Fred</figcaption></figure>  
+                    <figure class="chooseAvatar available" id="robert" ><img src='img/rabbit-icon.png' /><figcaption>Robert</figcaption></figure>  
+                </section>
+                <section class="paginator">
+                   <ul type="none">
+                       <li id="back">Retornar</li>
+                       <li id="next">Avançar</li>
+                   </ul>
+                </section>
+                <!-- <section class="lineU"></section>
+                <section class="lineD"></section> -->
+            </section>
+            <section class="congrats">
+                <section class="congratsTitle">Fim de Jogo!</section>
+                <section class="congratsAvatar">
+                    <img src='img/db-icon.png' alt='winner' /> 
+                </section>
+                <section class="congratulations">
+                    <p id="win"></p>
+                    <p id="score"></p>
+                </section>
+                <section class="ok">Ok!</section>
+            </section>
+            <section class="fog"></section>   
+            <section class="modeContainer" id="mode">
+                <section class="page1">
+                    Modo:
+                    <figure class="modeImg" id="fast">
+                        <img src="img/fast-icon.png" alt=""  title="No modo r&aacute;pido, o jogador que pontuar continua sua jogada!"/>
+                        <figcaption>R&aacute;pido</figcaption>
+                    </figure>
+                    <figure class="modeImg" id="strat">
+                        <img src="img/strat-icon.png" alt="" title="No modo estrat&eacute;gico, cada jogador fará apenas um movimento por vez!"/>
+                        <figcaption>Estrat&eacute;gico</figcaption>
+                    </figure>
+                </section> 
+            </section>
+            <section class="ballPicker">
+                <article class="ballItem"><img src="img/db-icon.png"/> Dragon Ball</article>
+                <article class="ballItem"><img src="img/green-ball.png"/> Green Ball</article>
+                <article class="ballItem"><img src="img/blue-ball.png"/> Blue Ball</article>
+                <article class="ballItem"><img src="img/yellow-ball.png"/> Yellow Ball</article>
+                <article class="ballItem"><img src="img/purple-ball.png"/> Purple Ball</article>
+                <article class="ballItem"><img src="img/red-ball.png"/> Red Ball</article>
+                <article class="ballItem"><img src="img/silver-ball.png"/> Silver Ball</article>
+                <article class="ballItem"><img src="img/orange-ball.png"/> Orange Ball</article>                
+                <article class="ballItem"><img src="img/poke-ball.png"/> Pokeball </article>
+                <article class="ballItem"><img src="img/basket-ball.png"/> Basket Ball</article>
+                <article class="ballItem"><img src="img/base-ball.png"/> Baseball</article>
+                <article class="ballItem"><img src="img/volley-ball.png"/> Volley Ball</article>
+                <article class="ballItem"><img src="img/tennis-ball.png"/> Tennis Ball</article>
+                <article class="ballItem"><img src="img/snook-ball.png"/> Snook Ball</article>
+                <article class="ballItem"><img src="img/foot-ball.png"/> Soccer Ball</article>
+                <article class="ballItem"><img src="img/star-ball.png"/> Star Ball</article>
+                <article class="ballItem"><img src="img/pac-ball.png"/> Pacman Ball</article>
+            </section>
+                <section class="present">
+        <section class="presentTitle">Fence Fight!</section>
+        <section class="presentBan">
+            <img src = 'img/db-icon.png' alt = 'winner' />
+        </section>
+        <section class="presentation">
+            <p>Bem vindo ao Fence Fight!</p>
+            <p>Para vencer, tente fechar o m&aacute;ximo de cercas que puder!</p>
+        </section>
+        <section id="goGame" class="ok">Pressione enter</section>
+    </section>
+    <section class="whiteFog"></section>
+
+
+	</body>
+</html>
